@@ -5,7 +5,7 @@ server:
   port: 1988
 
 service:
-  name: M2
+  name: M2-SERVICE
   startDate: 1988-01-01
   town: JHB
   province: Gauteng
@@ -15,3 +15,11 @@ management:
     web:
       exposure:
         include: refresh
+
+eureka:
+  client:
+    enabled: true
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
