@@ -1,0 +1,11 @@
+# Default profile: this will apply to all the profiles
+server:
+  servlet:
+    context-path: /m1
+  port: 1989
+
+service:
+  name: M1
+  startDate: 1989-01-01
+  town: Bloemfontein
+  province: Free State
